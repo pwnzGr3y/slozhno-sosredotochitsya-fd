@@ -1,6 +1,16 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-.header {
+.header__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    color: var(--ht-color);
+    text-shadow: 4px 4px 0 var(--accent-color);
 
+}
+.header__rec {
+    color: var(--bg-decor);
+}
+
+.header__theme-menu {
+    color: var(--bg-decor);
 }
 .page {
     display: grid;
@@ -9,6 +19,7 @@
     max-inline-size: 1024px;
     background-color: var(--bg-color);
     font-family: var(--main-font);
+    color: var(--text-color);
 }
  .gallery__images {
      inline-size: 100lvh;
@@ -21,4 +32,8 @@
  }
  .section__title {
      color: var(--bg-decor);
+ }
+
+ .decorated-zone {
+
  }
