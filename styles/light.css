@@ -15,8 +15,13 @@
     --bg-decor: #FF8DCB; /* фон для title-decor */
     --ht-color: #FFC2E6; /* цвет  no focus*/
     --text-color: #353430; /* цвет текста */
+    --button-color: #353430;
 }
+
+.theme-light .header__rec {
+    display: none;
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
+.

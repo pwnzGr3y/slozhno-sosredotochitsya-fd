@@ -1,17 +1,63 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+
+.header__rec {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.header__rec::after {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
 .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     color: var(--ht-color);
     text-shadow: 4px 4px 0 var(--accent-color);
+    line-height: 83%;
+    margin: 0;
+}
 
+.header__subtitle {
+    font-size: 18px;
+    line-height: 23.4px;
+    margin: 0;
 }
-.header__rec {
-    color: var(--bg-decor);
-}
+
 
 .header__theme-menu {
     color: var(--bg-decor);
+    justify-self: end;
 }
+
+.header__theme-menu-list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__theme-menu-button {
+    background: none;
+    border: none;
+    color: var(--button-color);
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: lowercase;
+    font-weight: normal;
+}
+
+
 .page {
     display: grid;
     justify-items: center;
@@ -28,7 +74,7 @@
  .title-decor {
      color: var(--bg-color);
      background-color: var(--bg-decor);
-
+     padding: 5px 10px;
  }
  .section__title {
      color: var(--bg-decor);
@@ -37,3 +83,71 @@
  .decorated-zone {
 
  }
+
+.main {
+    padding: 20px;
+    display: grid;
+    gap: 40px;
+}
+
+.section {
+    display: grid;
+    gap: 20px;
+}
+
+.section__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section__subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section__subsubtitle {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.section__text {
+    font-size: 18px;
+    line-height: 23.4px;
+    margin: 0;
+}
+
+.gallery {
+    display: grid;
+    gap: 10px;
+}
+
+.gallery__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.gallery__images {
+    display: grid;
+    gap: 10px;
+}
+
+.gallery__images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+.footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    color: var(--ht-color);
+    text-shadow: 4px 4px 0 var(--accent-color);
+    line-height: 83%;
+    margin: 0;
+}
