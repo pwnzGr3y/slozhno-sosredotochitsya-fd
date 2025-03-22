@@ -3,5 +3,22 @@
 
 }
 .page {
-
+    display: grid;
+    justify-items: center;
+    min-inline-size: 375px;
+    max-inline-size: 1024px;
+    background-color: var(--bg-color);
+    font-family: var(--main-font);
 }
+ .gallery__images {
+     inline-size: 100lvh;
+ }
+
+ .title-decor {
+     color: var(--bg-color);
+     background-color: var(--bg-decor);
+
+ }
+ .section__title {
+     color: var(--bg-decor);
+ }

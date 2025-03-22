@@ -9,4 +9,5 @@
     --bg-decor: #FF0070; /* фон для title-decor */
     --ht-color: #DB00FF; /* цвет  no focus*/
     --text-color: #F1B2CE; /* цвет текста */
+    --main-font: 'IBM Plex mono';
 }
