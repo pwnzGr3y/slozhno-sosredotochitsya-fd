@@ -1,5 +1,20 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.header {
+    display: grid;
+    position: relative;
+    grid-template-rows: 1fr min-content 1fr;
+    background-image: url("../images/cover-image-dark.png");
+    background-position: bottom;
+    background-size: cover;
+    justify-items: end;
+    align-items: center;
+    min-block-size: 668px;
+    background-attachment: fixed;
 
+}
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }

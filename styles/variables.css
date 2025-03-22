@@ -2,3 +2,11 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+    --accent-color: #FF0070; /* цвет обводки */
+    --bg-color: #000028; /* цвет фона */
+    --bg-image: url('../images/cover-image-dark.png'); /* фон  тёмной темы */
+    --bg-decor: #FF0070; /* фон для title-decor */
+    --ht-color: #DB00FF; /* цвет  no focus*/
+    --text-color: #F1B2CE; /* цвет текста */
+}
