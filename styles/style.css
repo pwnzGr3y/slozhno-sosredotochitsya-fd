@@ -21,6 +21,8 @@
     background-repeat: no-repeat;
 }
 
+@media (width >=768px)
+
 .header__rec {
     position: absolute;
     top: 10px;
@@ -51,6 +53,8 @@
 
 .header__subtitle {
     display:grid;
+    margin-top: 55px;
+    font-weight: bold;
     font-size: 18px;
     line-height: 23.4px;
     margin-bottom: 55px;
@@ -92,10 +96,6 @@
      background-color: var(--bg-decor);
      padding: 5px 10px;
  }
- .section__title {
-     color: var(--bg-decor);
- }
-
 
 .main {
     display: grid;
@@ -103,21 +103,26 @@
     margin-top: 40px;
 }
 
-.section {
+section {
+    margin-bottom: 50px;
+}
+
+.content__section {
     display: grid;
-    gap: 20px;
 }
 
 .section__title {
     font-size: 18px;
     font-weight: bold;
-    margin: 0;
+    color: var(--bg-decor);
+    max-width: 300px;
 }
 
 .section__subtitle {
     font-size: 18px;
     font-weight: bold;
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .section__subsubtitle {
