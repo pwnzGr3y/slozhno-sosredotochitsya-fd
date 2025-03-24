@@ -21,8 +21,6 @@
     background-repeat: no-repeat;
 }
 
-@media (width >=768px)
-
 .header__rec {
     position: absolute;
     top: 10px;
