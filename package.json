@@ -1,0 +1,17 @@
+{
+  "name": "slozhno-sosredotochitsya-fd",
+  "version": "1.0.0",
+  "description": "Homework",
+  "scripts": {
+    "lint": "npx prettier .",
+    "lint:style": "npx stylelint **/*.css",
+    "lint:fix": "npx prettier . --write && npx stylelint **/*.css --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.5.3",
+    "stylelint": "^16.16.0",
+    "stylelint-config-standard": "^37.0.0"
+  }
+}

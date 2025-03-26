@@ -1,25 +1,15 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-    --accent-color: #FF8DCB; /* цвет обводки */
-    --bg-color: #FFF1F7; /* цвет фона */
-    --bg-image: url('../images/cover-image-light.png'); /* фон  тёмной темы */
-    --bg-decor: #FF8DCB; /* фон для title-decor */
-    --ht-color: #FFC2E6; /* цвет  no focus*/
-    --text-color: #353430; /* цвет текста */
-    --button-color: #353430;
+  --accent-color: #ff8dcb;
+  --bg-color: #fff1f7;
+  --bg-image: url("../images/cover-image-light.png");
+  --bg-decor: #ff8dcb;
+  --title-color: #ffc2e6;
+  --text-color: #353430;
+  --button-color: #353430;
 }
 
 .theme-light .header__rec {
-    display: none;
+  display: none;
 }
 
 .theme-light .page {
