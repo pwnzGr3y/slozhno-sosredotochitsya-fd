@@ -6,6 +6,8 @@
   --title-color: #db00ff;
   --text-color: #f1b2ce;
   --button-color: #ff0070;
+  --link-color: #F1B2CE;
+  --link-shadow: #ff0070;
 }
 
 .theme-dark .header__rec {
