@@ -1,5 +1,6 @@
 /* Утилитарные */
 
+/* Декоративная зона */
 .decorated-zone {
   position: relative;
 }
@@ -18,6 +19,11 @@
   right: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
+
+  @media (width >= 768px) {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .decorated-zone::after {
@@ -25,13 +31,15 @@
   left: 10px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
+
+  @media (width >= 768px) {
+    bottom: 20px;
+    left: 20px;
+  }
 }
 
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
+/* Основные стили страницы */
 .page {
-  min-inline-size: 375px;
-  max-inline-size: 1024px;
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--main-font), monospace;
@@ -42,10 +50,11 @@
   background-repeat: no-repeat;
 }
 
+/* Стили шапки */
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  place-items: center end;
+  place-items: center;
   grid-template-columns: 1fr;
   padding: 10px;
   block-size: 100vh;
@@ -80,7 +89,7 @@
   inline-size: 100%;
 
   @media (width >= 768px) {
-    width: calc(50% - 20px);
+    width: 50%;
     justify-self: right;
   }
 }
@@ -88,10 +97,15 @@
 .header__rec {
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 200px;
   color: var(--accent-color);
   font-size: 18px;
   line-height: 25px;
+
+  @media (width >= 768px) {
+    top: 20px;
+    right: 27px;
+  }
 }
 
 .header__rec::after {
@@ -105,14 +119,13 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
+/* Меню тем в шапке */
 .header__theme-menu {
-  margin-top: 65px;
   color: var(--bg-decor);
-  place-self: start end;
+  place-self: center end;
 
-  @media (width >= 1024x) {
-    justify-self: center;
-    align-items: center;
+  @media (width >= 1024px) {
+    place-self: start center;
   }
 }
 
@@ -142,23 +155,32 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--button-color); /* Рамка вокруг текста */
+  border: 1px solid var(--button-color);
   outline-offset: 2px;
 }
 
 .header__theme-menu-button:focus {
   outline: none;
-  border-bottom: 1px solid var(--button-color);
 }
 
+.header__theme-menu-button:focus-visible {
+  border-color: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:active {
+  border: 1px solid currentcolor;
+}
+
+/* Декоративные элементы заголовка */
 .title-decor {
   color: var(--bg-color);
   background-color: var(--bg-decor);
 }
 
+/* Стили ссылок */
 .links {
   color: var(--link-color);
-  text-shadow: 2px 2px 0 var(--link-shadow);
+  text-shadow: 2px 1px 0 var(--link-shadow);
   text-decoration: none;
 }
 
@@ -167,11 +189,14 @@
 }
 
 .links:focus {
+  outline: none;
+}
+
+.links:focus:focus-visible {
   outline: 1px solid var(--link-color);
 }
 
-/*  SECTION */
-
+/* Стили контентной секции */
 .content-section {
   font-size: 18px;
   font-style: normal;
@@ -223,16 +248,21 @@
   font-size: 18px;
 }
 
+/* Основной контент */
 .content {
+  margin-top: 40px;
   display: grid;
   gap: 50px;
   padding: 10px;
 
   @media (width >= 768px) {
     padding: 20px;
+    margin-top: 60px;
+    gap: 80px;
   }
 }
 
+/* Стили секции причин */
 .causes {
   .content-section__title {
     grid-column: 1/-1;
@@ -254,7 +284,7 @@
   }
 }
 
-/* GALLERY */
+/* Стили галереи */
 .gallery {
   display: grid;
   gap: 10px;
@@ -296,6 +326,7 @@
   }
 }
 
+/* Стили футера */
 .footer {
   display: flex;
   align-items: center;
@@ -303,6 +334,10 @@
   margin-top: 40px;
   padding: 0 10px;
   block-size: 100vh;
+
+  @media (width >= 768px) {
+    margin-top: 60px;
+  }
 }
 
 .footer__title {
@@ -312,6 +347,7 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
+/* Медиа-запросы для галереи */
 @media (width >= 768px) {
   .sunset {
     display: grid;
