@@ -164,7 +164,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button_active {
