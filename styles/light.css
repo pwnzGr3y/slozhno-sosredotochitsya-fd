@@ -1,6 +1,6 @@
 :root.theme-light {
   --accent-color: #ff8dcb;
-  --bg-color: #fff1f7;
+  --bg-color: #353430;
   --bg-image: url("../images/cover-image-light.png");
   --bg-decor: #ff8dcb;
   --title-color: #ffc2e6;
@@ -9,6 +9,8 @@
   --link-color: #353430;
   --link-shadow: #ff8dcb;
   --nav-color: #353430;
+  --border-color: #32312D66;
+  --title-section: #353430;
 }
 
 .theme-light .header__rec {
