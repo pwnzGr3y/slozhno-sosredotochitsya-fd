@@ -45,7 +45,7 @@
 
 /* Основные стили страницы */
 .page {
-  background-color: var(--bg-color),#000028,#fff1f7;
+  background-color: var(--bg-color), #000028, #fff1f7;
   color: var(--text-color);
   font-family: var(--main-font), monospace;
   background-image: var(--bg-image);
