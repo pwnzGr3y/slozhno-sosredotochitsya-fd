@@ -1,5 +1,5 @@
 /* Утилитарные */
-.heading-3 {
+.heading {
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -45,7 +45,7 @@
 
 /* Основные стили страницы */
 .page {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color),#000028,#fff1f7;
   color: var(--text-color);
   font-family: var(--main-font), monospace;
   background-image: var(--bg-image);
@@ -104,7 +104,7 @@
   position: absolute;
   justify-self: end;
   top: 10px;
-  right: 15px;
+  right: 17px;
   color: var(--accent-color);
   font-size: 18px;
   line-height: 25px;
@@ -118,8 +118,8 @@
 .header__rec::after {
   content: "";
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   background-color: var(--accent-color);
   border-radius: 50%;
   margin-left: 10px;
@@ -165,11 +165,11 @@
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--border-color);
+  outline: none;
 }
 
 .header__theme-menu-button_active {
@@ -290,6 +290,7 @@
     @media (width >= 1024px) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
   }
 }
