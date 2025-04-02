@@ -172,7 +172,7 @@
   outline: none;
 }
 
-.header__theme-menu-button_active {
+.header__theme-menu-button--active {
   pointer-events: none;
   border: 1px solid currentcolor;
 }
@@ -253,6 +253,12 @@
   margin-top: 20px;
   font-weight: 400;
   font-size: 18px;
+}
+
+.text-block__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Основной контент */
